@@ -4,7 +4,7 @@ from request_image import get_content
 nasa_content = get_content()
 date = nasa_content['date']
 st.header(nasa_content["title"])
-st.image("image.png", caption=f"NASA Image of the day for {date}", width=600, use_column_width=True)
+st.image("image.png", caption=f"NASA Image of the day for {date}", use_column_width=True)
 
 with st.sidebar:
     st.title("NASA image of the day")
